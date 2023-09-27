@@ -1,0 +1,262 @@
+IMPORTANTE: É fundamental que um aspirante a desenvolvedor/programador mantenha o 
+seu código sempre bem arrumado,a INDENTAÇÃO é muito importante!
+
+
+
+a maioria dos comandos devem possuir < e >, e se tiver fechamento,
+ deve utilizar a / (barra).
+ex: p e /p. h1 e /h1.
+<!DOCTYPE= tipo de documento (HTML, CSS, Java Sript)
+<head>= título da pág, introdução
+<body>= conteúdo da pág
+<h1>= título do texto (hello, world!)
+<hr>= linha (não possui fechamento)
+<p>= paragrafo 
+UTF-8= Negocio pra pagina suportar pontuação (^,~,´)
+
+&lt; e &gt; = caso queira mostrar algum sinal como (<,/ e etc) 
+sem que o HTML ache que é um comando.
+LT= Less Than
+GT= Greater Than
+
+Símbolos especiais ou HTMl Entities = @,#,$,%,& (existem códigos,
+ e eu tenho a tabela, está na pasta.
+
+Emoji= 
+&#x e código do emoji
+(pode colocar logo o emoji, mas existem algns navegadores
+ que aceitam apenas o codigo.)
+
+sobre hierarquia de títulos
+h1: título principal
+h2: subtítulo
+h3: tópico 
+e por aí vai..
+lembrando: esses comandos só vão de h1 até h6!! não passa disso 
+não se preocupe se o título/subtítulo/tópico ficou maior/menor do que vc queria, 
+nem nunca utilize h1 e vá direto para h3 ou coisas assim só para mudar o tamanho. Isso
+pode ser resolvido em CSS3.
+textos subescritos e supescritos
+<sub></sub>= embaixo 
+<sup></sup>encima
+
+LISTAGEM ORDENADA (ol)
+
+utilizamos <ol></ol>
+ex:
+<ol>
+<li>Acordar</li>
+<li>Tomar café</li>
+<li>Ligar para o joão</li>
+</ol>
+
+vai ficar assim:
+1. acordar
+2. tomar café
+e etc...
+
+LISTAGEM NÃO ORDENADA (ul)
+utilizamos <ul></ul>
+ex
+<ul>
+    <li>pão</li>
+    <li>leite</li>
+    <li>tomate</li>
+</ul>
+
+vai ficar:
+*pão
+*leite
+*tomate
+e etc...
+
+
+CRIAÇÃO DE PAGS com linux
+./ = volta uma pág
+../ = volta uma PASTA
+
+
+
+CSS!!!!!!!!!!!!!!
+ PÉROLA ENTENDE QUE STYLE É SEMPRE DENTRO DO <> E NUNCA FORA
+
+
+IMPORTANTE: É fundamental que um aspirante a desenvolvedor/programador mantenha
+ o seu código sempre bem arrumado, a INDENTAÇÃO é muito importante!
+
+
+para cor da página:
+você vai ter que colocar o (style) DENTRO do >, nao esquece!
+tipo: <body style="">
+e não: <body> style 
+sempre o (style) vai INVADIR a privacidade da palavra
+<body> style (ERRADOO) //// <body style=> (ISSOOOO)
+
+agora cor do H1, H2 e assim por diante
+NÃO FAÇA: 
+<h1> style= 
+FAÇA:
+<h1 style=>
+ex::::
+<h1 style="color: blue;">seu textinho lindao</h1>
+
+E OUTRA, não precisamos criar 1 style pra cada coisinha. digamos que eu queira 
+mudar a cor da letra para AZUL, e a fonte dela para ARIAL tambem. posso colocar as duas coisas
+ em um style só!
+
+ex:
+<h1 style="color: blue; font-family: Arial, Helvetica, sans-serif;">seu textinho lindao dnv</h1>
+
+SEMPRE VAI TER Q FAZER EM CADA UM DELES, digamos q eu tenha uns vinte h1. vou mudar a cor de todos eles? pois vai ser 
+UM
+POR
+UM.
+não tem como, sempre vai ser 1 por 1.
+
+tag <a> e </a>
+vem de âncora. (semântica, né?)
+vai aparecer isso: 
+<a href=""></a>
+dentro dos "" coloque o nome da página ou segure crtl+espaço, ex: <a href="index.html">seu texto</a>
+se for um link externo, como um vídeo do youtube ou etc, coloque tipo assim:
+<a href="https://alguma coisa">seu textin</a>
+
+_SELF E _BLANK
+o (_self) é pra quando vc quer que a página abra ENCIMA do seu site. ou seja, se vc colocou um vídeo do youtube, por exemplo, ele vai cobrir teu site.
+já o (_blank) vai ABRIR UMA NOVA ABA. o vídeo do youtube por exemplo, abriria em uma nova guia e MANTERÁ seu site.
+
+_self e _blank sempre vão precisar do (target) antes, tá?
+tipo:
+target="_self"
+target="_blank"
+como faz:
+digamos q vc ja esteja com o vídeo e o nome dele prontos, ex:
+<a href="HTTPS://>NOME DO VIDEO</a>
+
+mas vc quer q ele abra em outra pág. você fará:
+<a href="HTTPS://" target= "_blank" >NOME DO VÍDEO</a>
+caso você queira mesmo abrir algo em uma nova aba, é importante utilizar tambem o (rel)!!!! 
+é um comando novo, mas é recomendado. ele indica ao mecanismo do google quevocê quer outra pág. ex:
+target="_blank" rel="external"
+existem város tipos de rel, mas esse é oq eu mais estudei.
+
+achei umas anotações e não entendi muito, mas vou colocar aq, pq vai ser útil
+_blank vai abrir o link em uma nova janela em branco
+_self vai abrir o link na janela atual
+_top vai desfazer todos os frames e abrir o destino no navegador completo
+_parent similar ao uso do (_top) em uma referência a janela mãe 
+ 
+---------
+next indica que o link é para a próxima parte do documento atual
+prev indica que o link é para a parte anterior do documento atual
+author indica q é um link para o site do autor do artigo atual
+external indica que é um link para outro site que não faz parte do site
+
+NAO ESQUECEEEEEEEEEEEEEEEE
+CRTL+SHIFT+P WRAP WITH ABBREVIATION
+é o wrap!
+
+IMPORTANTE: É fundamental que um aspirante a desenvolvedor/programador mantenha
+ o seu código sempre bem arrumado, a INDENTAÇÃO é muito importante!
+
+Existe um SENTIDO/ORDEM correta PARA INSERIR as propriedades border-radius descritas acima. A "direção" correta é: 
+
+1) - Top Left - Superior Esquerda  
+2) - Top Right - Superior Direita
+3) - Bottom Right - Inferior Direita
+4) - Bottom Left - Inferior Esquerda
+Também podemos utilizar uma SHORTHAND para inserir e simplificar todas essas declarações de border-radius 
+em uma única linha, exemplo: " border-radius: 15px 10px 15px 10px; "
+
+
+BOX-LEVEL(ou block) AND INLINE-LEVEL:
+
+Tags de agrupamento (grouping tags):
+
+- Sem valor semântico:
+
+   <div> -> block
+   <span> -> inline
+
+- Com valor semântico:
+
+<header> -> cabeçalho
+<nav> -> para menus, links, navegação
+
+<main> -> principal
+<section> -> seção
+<article> -> artigo
+<aside> -> periférico ao artigo (ex: escritor / autor)
+
+
+box-level / block-level: Em uma caixa do tipo "box-level / block-level", o dito elemento sempre irá se iniciar em uma nova linha e como padrão sempre
+ ocupará a largura total da tela ou do elemento onde ele está contido (100% do viewport), sendo que irá pular para a próxima linha antes de continuar
+ o conteúdo posterior e aí sim inserir outros boxes. As caixas desse tipo são isoladas e independentes.
+
+Exemplos de tags do tipo "box-level / block-level": <div> <p> <main> <video> <h1>
+
+inline-level: Já uma caixa do tipo "inline-level" não vai começar em uma nova linha, e sim no ponto exato onde foram definidos, no meio de um parágrafo 
+por exemplo. E a largura dele vai ocupar apenas o tamanho relativo ao seu conteúdo, sendo que não irá quebrar a linha ao terminar, continuando o conteúdo 
+de forma direta (em um parágrafo por ex) sem pular para a linha de baixo.
+
+Apertando a tecla TAB (olha pro esc e pula 2 teclas.
+ NÃO É O FIXA, É DS SETINHAS) você consegue trazer o código pra frente.
+se seu texto esta muito colado no canto, seleciona ele e aperta TAB
+Deslocou demais? SHIFT+TAB, ele volta
+
+
+NUNCA ESQUECER:
+CRIAÇÃO DE PASTA SEPARADA PARA CSS
+
+crie uma pasta no seu documento, ela vai ser o css. pode chamar de estilo, style, css, bolinho, oque quiser.
+Digamos qu eu chamei de "pirão de frango"
+
+Para criar uma aba de CSS SEPARADO da aba de HTML, vc vai digitar no próprio codigo 
+de html a palavra LINK e vai escolher a opção LINK:CSS
+
+link:
+<link rel="stylesheet" href="style.css">
+
+e vai escrever nos ultimos "", o nome da pasta que criou para o css:
+<link rel="stylesheet" href="pirãodefrango/style.css">
+
+agora segure o CTRL e clique na parte "pirãodefrango/style.css"
+e crie sua pasta separada.
+
+NÃO ESQUECE de colocar o @charset "UTF-8";
+COM O ; NO FINAL!!!!!
+
+para criar um site com cores, vc precisa de uma paleta. Digamos que ja tenh a paleta com 5 cores.
+
+posso organizá-la com o codigo root{} 
+root é meio que uma base de tudo sobre cores em CSS3.
+então digamos que eu já tenha minha paleta. vou fazer isso aqui:
+
+:root{
+    --cor0: #codigo da cor;
+    --cor1: #tipo aq embaixo;
+    --cor2: #1ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e; 
+}
+
+*- root SEMPRE vai ter o : antes. (:root)
+as corezinhas (--cor0:, --cor1:) pode mudar o nome, tipo: --cordedestaque:, 
+--bolinho:, mas SEMPRE acompanha (:) no final, ex:
+
+--bolinho:
+
+se ja fez o root, aí quando for utilizar as cores no css, pode utilizar o var()
+é legalzin, ó. 	quando vc for colocar cor em alguma coisa, digamos que no h1.
+vc vai digitar assim:
+
+h1{
+color: var()
+}
+
+e dentro do var vai colocar o nome da cor que vc usou(NOME, NAO CODIGO DELA):
+
+h1{
+color: var(--bolinho)
+}
