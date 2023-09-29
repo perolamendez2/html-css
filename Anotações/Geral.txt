@@ -84,3 +84,8 @@ Tudo que em HTML é class= em CSS é .
 Header: cabeçalho
 Nav: Menu/opções
 Main: conteúdo principal, textos. dentro podem ter <h1>, <p>, e etc.
+
+ENTRAMOS EM GITHUB!
+é pra rir ou chorar?
+
+meu domínio: https://perolamendez2.github.io/html-css/
