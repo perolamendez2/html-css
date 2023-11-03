@@ -91,5 +91,41 @@ ENTRAMOS EM GITHUB!
 meu domínio: https://perolamendez2.github.io/html-css/
 
 
+algumas perguntas importantes:
+  oque é o box model no css?
+    -modelo que define a estrutura de elementos no HTML.
+
+  oque é um media querry no css?
+    -tecnica de design responsivo (com base em dispositivos).
 
 
+
+IMPORTANTE
+acabei de pesquisar
+
+para se referir a um id no CSS em VScode, utilizamos o #
+
+ex: h1#id{
+
+}
+
+AGOOOOORA, para se referir a uma classe, utilizamos o .
+ex: h1.class{
+
+}
+NAO ESQUECE, ID (#) CLASSE (.)
+
+
+sabia que podemos usar uma imagem no noso site que NÃO está salva no nosso pc?
+podemos utilizar uma impagem de um site, do google imagens, etc.
+Basta copiar o link da imagem e jogar no codigo, ó:
+
+
+IMAGENS EM CSS:
+
+body{
+background-image= url ()
+}
+
+basta colocar o link da imagem dentro do () parênteses. Mas você vai ficar
+dependente desse link. Se um dia a imagem sair do ar, ela sai do seu site tmb.

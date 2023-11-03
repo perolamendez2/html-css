@@ -260,3 +260,24 @@ e dentro do var vai colocar o nome da cor que vc usou(NOME, NAO CODIGO DELA):
 h1{
 color: var(--bolinho)
 }
+
+
+IMAGENS EM CSS:
+
+background-size: configura o tamanho da sua imagem de fundo num site (vertical e horizontalmente).
+ex: background-size: 100px 100px;
+
+background-repeat: repete ou NÃO repete sua imagem de fundo.
+tem varios jeitos de usar, vou explicar alguns:
+
+"background-repeat: no-repeat" NÃO VAI DEIXAR o site repetir a imagem que vc colocou,
+independente do taanho dela.
+
+background-repeat: repeat-x" vai repetir apenas HORIZONTALMENTE
+
+background-repeat: repeat-y" repete apenas VERTICALMENTE
+
+ta ai, expliquei só oq sei 😘
+
+background-attachment: É MTO LEGAO
+background-attachment: fixed : isso daq prende a imagem no fundo, ela fica FIXA!
