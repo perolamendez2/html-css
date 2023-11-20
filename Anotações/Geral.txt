@@ -141,18 +141,65 @@ tbody > tr:nth-child(2n) {
     background-color: lightgray;
 }
 
-Obs.: Dentro do seletor exemplificado acima, temos uma declaração de especificação de background, a cor determinada nessa declaração que vai ser aplicada nas linhas zebradas.
+Obs.: Dentro do seletor exemplificado acima, temos uma declaração de especificação de background, a cor determinada nessa
+ declaração que vai ser aplicada nas linhas zebradas.
 
-Na pseudo-classe " nth-child() ", ao invés de usarmos o valor " 2n ", também podemos usar os valores nominais " even " OU " odd " (par ou ímpar). Com um desses dois nomes como valor, podemos deixar toda linha que é ímpar (odd) com background, ou vice-versa, se for o valor even.
+Na pseudo-classe " nth-child() ", ao invés de usarmos o valor " 2n ", também podemos usar os valores
+ nominais " even " OU " odd " (par ou ímpar). Com um desses dois nomes como valor, podemos deixar toda 
+linha que é ímpar (odd) com background, ou vice-versa, se for o valor even.
 
 O valor " 2n " seria equivalente ao valor nominal " even " (par)
 
 Entretanto, também temos o valor " 2n-1 ", que seria equivalente ao valor nominal " odd " (ímpar)
 
-Como já foi digo, dentro do seu seletor, você deve determinar uma cor para o background da linha, entretanto esse seletor só vai aplicar essa cor para as linhas pares (ou impares se for o caso), gerando o efeito zebrado...
+Como já foi digo, dentro do seu seletor, você deve determinar uma cor para o background da linha, entretanto
+ esse seletor só vai aplicar essa cor para as linhas pares (ou impares se for o caso), gerando o efeito zebrado...
 
-Dessa forma, uma dica é abrir um outro seletor, idêntico ao primeiro mas com um valor OPOSTO para a pseudo-classe " nth-child() " (se o valor do primeiro seletor é odd, para o segundo tem que ser even e vice-versa). E a cor do background configurada nesse segundo seletor tem que ser diferente. Assim você criará um efeito zebrado com cores que se alternam... Uma linha azul e outra amarela e assim por diante por exemplo.
+Dessa forma, uma dica é abrir um outro seletor, idêntico ao primeiro mas com um valor OPOSTO para a pseudo-classe
+ " nth-child() " (se o valor do primeiro seletor é odd, para o segundo tem que ser even e vice-versa). E a cor do
+ background configurada nesse segundo seletor tem que ser diferente. Assim você criará um efeito zebrado com cores que se alternam... 
+Uma linha azul e outra amarela e assim por diante por exemplo.
 
-Com a pseudo-classe " nth-child() " exemplificamos o efeito zebrado com uma declaração de background-color dentro do seletor, entretanto, além da cor, dentro desse mesmo seletor você também pode fazer outras alterações que se manifestam de forma alternada (linha sim, linha não). Como por exemplo: Mudar o tamanho da letra, peso da letra, sublinhar e por aí vai...
+Com a pseudo-classe " nth-child() " exemplificamos o efeito zebrado com uma declaração de background-color dentro do seletor,
+ entretanto, além da cor, dentro desse mesmo seletor você também pode fazer outras alterações que se manifestam de forma alternada 
+(linha sim, linha não). Como por exemplo: Mudar o tamanho da letra, peso da letra, sublinhar e por aí vai...
 
-Nota: Você deve utilizar a técnica do efeito zebrado em tabelas que tem muitos dados lateralmente (muitas colunas), quando a letra é muito pequena e quando a tabela tem muitas linhas.
+Nota: Você deve utilizar a técnica do efeito zebrado em tabelas que tem muitos dados lateralmente (muitas colunas), quando a letra 
+é muito pequena e quando a tabela tem muitas linhas.
+
+
+MESCLAGEM DE CELULASSSSSSSSSSSSSSSS
+
+A mesclagem de células é uma técnica muito importante e que está presente em muitas tabelas.
+ Dessa forma, é altamente necessário que você aprenda a fazer mesclagem, porque cedo ou tarde 
+você vai precisar usar isso no seu projeto.
+
+Entenda que apesar de chamarmos de "mesclagem de células", na realidade, considerando que você 
+já tenha uma tabela montada, basicamente temos que deletar uma célula e expandir a célula vizinha.
+ Dessa forma, é como se a célula vizinha que foi expandida, ocupasse também o espaço da célula que foi deletada... "mesclando".
+
+Portanto, se você quer mesclar células, a primeira coisa que você tem que fazer é ir no HTML da 
+sua tabela e deletar a célula vizinha da célula que irá ser expandida. Depois que você fizer isso, 
+a sua tabela irá ficar com um "buraco", uma lacuna ocasionada pela ausência da célula que foi deletada. 
+(essa lacuna sempre vai começar pela parte direita da tabela, mesmo que a célula excluída seja da parte esquerda)
+
+Iremos preencher essa lacuna expandindo a célula vizinha, mesclando. Essa expansão pode ser feita em
+ forma de coluna ou em forma de linha. 
+
+Quando devemos utilizar cada uma dessas formas de expansão (coluna ou linha)?
+
+- Utilize a expansão em forma de COLUNA quando a célula vizinha, aquela que você deletou, estiver ao lado
+ (esquerdo ou direito) da célula que irá ser expandida. 
+
+- Utilize a expansão em forma de LINHA quando a célula vizinha, aquela que você deletou, estiver embaixo (nunca em cima)
+da célula que irá ser expandida. 
+
+EXPANSÃO NA PRÁTICA:
+
+Expansão em forma de COLUNA: Para fazer isso, dentro da célula que você quer expandir, você deve inserir o parâmetro HTML 
+" colspan " com o valor " 2 ", fazendo a célula ocupar duas colunas. Se você quiser expandir essa célula para mais de duas colunas
+ (previamente excluir as células vizinhas), altere o valor numérico do parâmetro. Esse valor numérico que define quantas " colunas " que a célula deve expandir.
+
+Expansão em forma de LINHA: Para fazer isso, dentro da célula que você quer expandir, você deve inserir o parâmetro HTML 
+" rowspan " com o valor " 2 ", fazendo a célula ocupar duas linhas. Se você quiser expandir essa célula para mais de duas linhas 
+(previamente excluir as células vizinhas), altere o valor numérico do parâmetro. Esse valor numérico que define quantas " linhas " que a célula deve expandir.
