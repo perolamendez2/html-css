@@ -225,3 +225,26 @@ ao invés de usar todas essas linhas de css, usamos tudo em uma linhagem só!
 sendo assim, o código fica: 
 background: black url('imagens/wallpaper002.jpg') no-repeat fixed center center;
  background-size: cover;
+
+
+
+
+IFRAME!
+tamanho PADRÃO de um iframe: 300px - 150px
+"ah, posso mudar o tamanho?" PODE
+vai ta la, ne, seu iframe, lindinho
+
+<iframe src="https://perolamendez2.github.io" frameborder="0"></iframe>
+
+vc vai colocar "height="tamanhopx"" ANTES do /iframe
+
+aq ó:
+<iframe src="https://perolamendez2.github.io" frameborder="0" height="500px"></iframe>
+mesma coisa pro width, ok? desde q seja antes do /iframe
+pronto :D
+
+
+digamos que eu configure um tamanho pro iframe DENTRO DELE, mas configuro
+outro tamanho pro iframe no CSS.
+oque vai valer?
+bom, nesse caso, meu css é soberano. ele vai passar por cima.
