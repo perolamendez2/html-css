@@ -202,4 +202,26 @@ Expansão em forma de COLUNA: Para fazer isso, dentro da célula que você quer 
 
 Expansão em forma de LINHA: Para fazer isso, dentro da célula que você quer expandir, você deve inserir o parâmetro HTML 
 " rowspan " com o valor " 2 ", fazendo a célula ocupar duas linhas. Se você quiser expandir essa célula para mais de duas linhas 
-(previamente excluir as células vizinhas), altere o valor numérico do parâmetro. Esse valor numérico que define quantas " linhas " que a célula deve expandir.
+(previamente excluir as células vizinhas), altere o valor numérico do parâmetro.
+ Esse valor numérico que define quantas " linhas " que a célula deve expandir.
+
+
+
+COMENTÁRIO RÁPIDO SOBRE SHORTHAND(NAO SEI OQ É ATE HJ)
+shorthands como diz o nome, é ma ajudinha pra quem ta
+ mexendo muito no css da pag.
+
+ex: qro colocar uma imagem:
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+ta vendo TOOODA essa parafernalha? xquece.
+só tu usar o SHORTHAND! é simplesmente simplificar os comandos.
+ao invés de usar todas essas linhas de css, usamos tudo em uma linhagem só!
+
+sendo assim, o código fica: 
+background: black url('imagens/wallpaper002.jpg') no-repeat fixed center center;
+ background-size: cover;
