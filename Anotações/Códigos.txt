@@ -350,3 +350,39 @@ Observações:
 
    - W3C: os fechamentos das tags <tr> e <td> não são obrigatórios, porém recomendados;
    - Se a hierarquia não for respeitada, os elementos vão aparecer antes ou depois da tabela.
+
+
+FORMULÁRIOS:
+
+para fazermos um formulário simples, como por exemplo, diitar nome e sobrenome e enviar,
+podemos utilizar o codigo INPUT. Ele tem vários jeitos de ser usado.
+
+ex: qro colocar meu nome e obrenome e enviar.
+
+digito 
+<form>
+    <p>Nome: 
+        <input type="text" name="nome" id="nome"></p>
+
+dentro de "name" e "id" colocamosoque queremos. Se quero nome, escrevo nome. se quero sobrenome, escrevo sobrenome.
+
+
+para fazer o botão de ENVIAR, vamos utilizar o IMPUT :SUBMIT
+
+ex:
+<p><input type="submit" value="Enviar"></p>
+
+dentro de VALUE vamos colocar ENVIAR ou oque quiser.
+
+
+
+
+informação adicional: quando vamos preencher o formulário, o google salva nossas informações e depois
+fica sugerindo quando vamos digitar de novo. 
+Para desligar aquela sugestão chata, vamos digitar no nosso código:
+
+ <form autocomplete="off">
+
+LOGO APÓS O <FORM> não esquece!!!!
+
+
