@@ -364,7 +364,8 @@ digito
     <p>Nome: 
         <input type="text" name="nome" id="nome"></p>
 
-dentro de "name" e "id" colocamosoque queremos. Se quero nome, escrevo nome. se quero sobrenome, escrevo sobrenome.
+dentro de "name" e "id" colocamosoque queremos. Se quero nome, escrevo nome. 
+se quero sobrenome, escrevo sobrenome.
 
 
 para fazer o botão de ENVIAR, vamos utilizar o IMPUT :SUBMIT
@@ -373,6 +374,9 @@ ex:
 <p><input type="submit" value="Enviar"></p>
 
 dentro de VALUE vamos colocar ENVIAR ou oque quiser.
+
+mesma coisa para limpar a caixinha, utilizamos o input: RESET
+ele limpa. né, limpa
 
 
 
@@ -386,3 +390,53 @@ Para desligar aquela sugestão chata, vamos digitar no nosso código:
 LOGO APÓS O <FORM> não esquece!!!!
 
 
+ainda sobre formulários
+estamos focando aq em tipos de input.
+temos o input: text= adiciona caixa de texto
+input: number: aceita só números INTEIROS. ex: 1,2,3,4,5,6,7,8,9,10
+"e se eu quiser colocar um número com vírgula? tipo 5,5?"
+criatura, você vai colocar o STEP
+
+STEP
+digamos que eu fiz lá ne um input
+
+<input type="number" name="seila" id="iseila"> 
+
+agr basta adicionar o step antes do >
+ex
+ 
+<input type="number" name="seila" id="iseila" step= "0.5">
+pronto! ja vai estar aceitando número com virgula, animal.
+
+a mesma coisa serve para o mínimo e máximo de letras/números na caixinha
+só que aí, usamos o MINLENGTH E MAXLENGTH
+
+vou usar o mesmo exemplo:
+        <input type="number" name="seila" id="iseila"> 
+
+quero um mínimo de letras de 5 dígitos
+utilizo o MINLENGTH
+
+        <input type="number" name="seila" id="iseila" minlength="5">
+
+quero tambem que o maximo seja de 30 letras
+  
+        <input type="number" name="seila" id="iseila" minlength="5" maxlength"30">
+ 
+otimo! posso juntar tudo isso com o step
+
+        <input type="number" name="seila" id="iseila" minlength="5" maxlength"30" step="0.5">
+
+fácil.
+
+vou falar tmb do PLACEHOLDER! noome legal, que permite adicionar texto DENTRO da caixinha 
+criei uma caixinha de nome de usuario
+
+        <input type="text" name="nome" id="inome" 
+adiciono o PLACEHOLDER para escrever dentro da caixinha:
+
+        <input type="text" name="nome" id="inome" placeholder="Nome de usuário">
+
+facil, amei xD
+
+ 
