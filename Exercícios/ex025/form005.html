@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+    <form action="cadastro.php"></form>
+    <p>
+    <label for="iemail">Email</label>
+    <input type="email" name="email" id="iemail">
+
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+    <p>
+        <label for="itel">Telefone</label>
+        <input type="tel" name="tel" id="itel">
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+
+    <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete </label><br>   
+        <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>    
+        <input type="checkbox" name="esvolei" id="iesvolei"> <label for="iesvolei">Vôlei </label><br>
+        <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+    </fieldset>
+</body>
+</html>
