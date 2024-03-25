@@ -35,7 +35,7 @@ e por aí vai..
 lembrando: esses comandos só vão de h1 até h6!! não passa disso 
 não se preocupe se o título/subtítulo/tópico ficou maior/menor do que vc queria, 
 nem nunca utilize h1 e vá direto para h3 ou coisas assim só para mudar o tamanho. Isso
-pode ser resolvido em CSS3.
+pode ser resolvido em CSS.
 textos subescritos e supescritos
 <sub></sub>= embaixo 
 <sup></sup>encima

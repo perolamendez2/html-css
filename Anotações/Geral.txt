@@ -3,8 +3,8 @@ HTML: linguagem de marcação utilizada para estruturar os elementos
 e até vídeos.
 
 CSS: linguagem de estilos utilizada para definir
- cores, fontes, tamanhos, posicionamento e qualquer outro valor
- estético para os elementos da página.
+cores, fontes, tamanhos, posicionamento e qualquer outro valor
+estético para os elementos da página.
 
 
 IMAGENS
@@ -166,6 +166,11 @@ Com a pseudo-classe " nth-child() " exemplificamos o efeito zebrado com uma decl
 
 Nota: Você deve utilizar a técnica do efeito zebrado em tabelas que tem muitos dados lateralmente (muitas colunas), quando a letra 
 é muito pequena e quando a tabela tem muitas linhas.
+
+
+
+Tudo que em HTML é id  = em CSS é #
+Tudo que em HTML é class= em CSS é .
 
 
 MESCLAGEM DE CELULASSSSSSSSSSSSSSSS
